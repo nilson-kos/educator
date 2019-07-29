@@ -671,39 +671,41 @@
                 <div class="contact_desktop">
                     <div class="col s12">
                     <ul class="tabs center">
-                        <li class="tab"><a href="#loc1" class="active"><h6>Ми у Києві</h6></a></li>
-                        <li class="tab"><a href="#loc2"><h6>Ми у Луцьку</h6></a></li>
+                        <li class="tab"><a href="#loc1" class="active" onclick="initKyev()"><h6>Ми у Києві</h6></a></li>
+                        <li class="tab"><a href="#loc2" onclick="initLutsk()"><h6>Ми у Луцьку</h6></a></li>
                     </ul>
                     </div>
-                    <div id="loc1" class="">
-                        
-                        <div class="col-md-2 center loc-desc z-depth-3" onclick="fillInfo(1, this)">
+                    <div id="loc1" class="col-md-12">
+                        <div class="col-md-4 center loc-desc z-depth-3" id="init_kyev" onclick="fillInfo(1, this)">
                             <span>Лівобережна</span>
                         </div>
-                        <div class="col m2 center loc-desc" onclick="fillInfo(2, this)">
+                        <div class="col-md-4 center loc-desc" onclick="fillInfo(2, this)">
                             <span>Позняки</span>
                         </div>
-                        <div class="col-md-2 center loc-desc" onclick="fillInfo(3, this)">
-                            <span>Деміївська</span>
+                        <div class="col-md-4 center loc-desc" onclick="fillInfo(3, this)">
+                            <span>Академмістечко</span>
                         </div>
-                        <div class="col-md-6 center info">
-                            <div class="round">
-                                <span class="round-title">Educator</span><br>
-                                <span class="round-desc">Лівобережна</span><br><br>
-                                <div style="text-align: left; margin-left: 40px;">
-                                    <span class="round-adress">вул. Раїси Окіпної, 10б</span><br>
-                                    <span class="round-phone-desc">Номер телефона: </span>
-                                    <span class="round-phone"> +38 063 290 64 20 </span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6" style="padding-top: 20px;">
-                            <div id="map">
+                    </div>
+                    <div id="loc2" class="col-md-12">
+                        
+                    </div>
+                    <div class="col-md-6 center info">
+                        <div class="round">
+                            <span class="round-title">Educator</span><br>
+                            <span class="round-desc">Лівобережна</span><br><br>
+                            <div style="text-align: left; margin-left: 40px;">
+                                <span class="round-adress">вул. Раїси Окіпної, 8</span><br>
+                                <span class="round-phone-desc">Номер телефона: </span>
+                                <span class="round-phone"> +38 063 290 64 20 </span>
                             </div>
                         </div>
                     </div>
-                    <div id="loc2" class="">here 2</div>
+                    <div class="col-md-6" style="padding-top: 20px;">
+                        <div id="map">
+                        </div>
+                    </div>
                 </div>
+
             </div>
 
             <!--MOBILE-->
@@ -712,31 +714,43 @@
                 <div class="col-sm-12">
                     <ul class="collection">
                         <li class="collection-item avatar">
-                            <i class="material-icons circle" style="background-color: #E87722;">account_balance</i>
+                            <i class="material-icons circle" style="background-color: #E87722;  margin-top: 15px;">account_balance</i>
+                            <span class="name_city">Київ</span><br>
                             <span class="title">Лівобережна</span>
                             <p>
-                                вул. Раїси Окіпної, 10б<br>
+                                вул. Раїси Окіпної, 8<br>
                                 Номер телефона: <a href="tel:+38 063 290 64 20">+38 063 290 64 20</a>
                             </p>
-                            <a href="https://goo.gl/maps/TUHcumEGTG12" class="secondary-content valign-wrapper">На мапi <i class="material-icons">location_on</i></a>
+                            <a href="https://goo.gl/maps/v2WPmYrJip78M7Hy7" class="secondary-content valign-wrapper">На мапi <i class="material-icons">location_on</i></a>
                         </li>
                         <li class="collection-item avatar">
-                            <i class="material-icons circle" style="background-color: #E87722;">account_balance</i>
+                            <i class="material-icons circle" style="background-color: #E87722;  margin-top: 15px;">account_balance</i>
+                            <span class="name_city">Київ</span><br>
                             <span class="title">Позняки</span>
                             <p>
-                                пр-т. Бажана, 14<br>
-                                Номер телефона: <a href="tel:+38 050 769 86 94">+38 050 769 86 94</a>
+                                пр-т. Бажана, 10<br>
+                                Номер телефона: <a href="tel:+38 099 677 35 19">+38 099 677 35 19</a>
                             </p>
-                            <a href="https://goo.gl/maps/7JxxZNrSpSJ2" class="secondary-content valign-wrapper">На мапi <i class="material-icons">location_on</i></a>
+                            <a href="https://goo.gl/maps/hEqB8f5xyozPRgQD7" class="secondary-content valign-wrapper">На мапi <i class="material-icons">location_on</i></a>
                         </li>
                         <li class="collection-item avatar">
-                            <i class="material-icons circle" style="background-color: #E87722;">account_balance</i>
-                            <span class="title">Деміївська</span>
+                            <i class="material-icons circle" style="background-color: #E87722; margin-top: 15px;">account_balance</i>
+                            <span class="name_city">Київ</span><br>
+                            <span class="title">Академмістечко</span>
                             <p>
-                                вул. Саперно-Слобідська, 10б<br>
-                                Номер телефона: <a href="tel:+38 050 769 86 94">+38 050 769 86 94</a>
+                                пр-т. Академіка Палладіна, 18/30<br>
+                                Номер телефона: <a href="tel:+38 099 546 71 69">+38 099 546 71 69</a>
                             </p>
-                            <a href="https://goo.gl/maps/scfD1ZpMLjC2" class="secondary-content valign-wrapper">На мапi <i class="material-icons">location_on</i></a>
+                            <a href="https://goo.gl/maps/j4rwcEWZTr9GKeN49" class="secondary-content valign-wrapper">На мапi <i class="material-icons">location_on</i></a>
+                        </li>
+                        <li class="collection-item avatar">
+                            <i class="material-icons circle" style="background-color: #E87722;  margin-top: 15px;">account_balance</i>
+                            <span class="name_city">Луцьк</span>
+                            <p>
+                                пр. Молоді, 8г<br>
+                                Номер телефона: <a href="tel:+38 093 235 61 78">+38 093 235 61 78</a>
+                            </p>
+                            <a href="https://goo.gl/maps/vsWtNTQCGeWj7zQR9" class="secondary-content valign-wrapper">На мапi <i class="material-icons">location_on</i></a>
                         </li>
                     </ul>
                 </div>
@@ -776,8 +790,6 @@
             async defer></script>
     <script src="js/init.js"></script>
     <script>
-        // var arr = ["ukr" => ["img" => "images/zno_ukr.png", "p" => "gopa ukr sobaki"],
-        //             "mat" => ["img" => "images/zno_mat.png", "p" => "gopa mat sobaki"],];
         var zno_array = { ukr : {img: "images/zno_ukr_max.png", p: "<span class=\"digitP\">53</span> теми, <span class=\"digitP\">68</span> занять<br>тривалість заняття <span class=\"digitP\">2</span> години, <span class=\"digitP\">3-4</span> учні в группі<br>Вартість: <span class=\"digitP\">вiд 110 грн/год</span><br><br>Завдяки цьому курсу ви здобудете всі необхідні знання для успішного складання тестів. Також ви дізнаєтеся, як без проблем запам`ятати десятки правил з української мови, як розпізнавати твори з української літератури у тестах ЗНО, які лайфхаки потрібно знати для успішного написання власного висловлення."},
                     mat: {img: "images/zno_mat_max.png", p: "<span class=\"digitP\">22</span> теми, <span class=\"digitP\">64</span> заняття<br>тривалість заняття <span class=\"digitP\">2</span> години, <span class=\"digitP\">3-4</span> учні в группі<br>Вартість: <span class=\"digitP\">вiд 110 грн/год</span><br><br>Математика — це не страшно, а навпаки: дуже цікаво та захопливо. Ми допоможемо тобі запам’ятати та зрозуміти природу всіх формул та теорем. Ти зможеш легко знаходити закономірності та бачити декілька розв‘язків різних задач не лише на аркуші, а й у реальному житті. З легкістю опануєш тригонометрію, і не тільки! Ми знаємо, як систематизувати всі знання та здати математику на відмінно."},
                     his: {img: "images/zno_his_max.png", p: "<span class=\"digitP\">31</span> тема, <span class=\"digitP\">68</span> занять<br>тривалість заняття <span class=\"digitP\">2</span> години, <span class=\"digitP\">3-4</span> учні в группі<br>Вартість: <span class=\"digitP\">вiд 110 грн/год</span><br><br>Вивчити за 9 місяців усю історію України від давніх часів до сучасності — це реально. \n" +
@@ -790,7 +802,6 @@
         $( ".allcards" ).on( "click", function() {
             var val = $( this ).attr("value");
             console.log(zno_array[val]);
-            //alert( zno_array['ukr'] );
             $( ".datacard .card-image img" ).attr("src", zno_array[val].img);
             $( ".datacard .card-content p" ).html(zno_array[val].p);
         });
@@ -804,18 +815,23 @@
 
             switch (loc) {
                 case 1:
-                    initContact("вул. Раїси Окіпної, 10б", "Лівобережна", "+38 063 290 64 20");
-                    newMap(50.448515, 30.589449);
+                    initContact("вул. Раїси Окіпної, 8", "Лівобережна", "+38 063 290 64 20");
+                    newMap(50.449082, 30.590754);
                     t.classList.add("z-depth-3");
                     break ;
                 case 2:
-                    initContact("пр-т. Бажана, 14", "Позняки", "+38 050 769 86 94");
-                    newMap(50.3954027, 30.6241181);
+                    initContact("пр-т. Бажана, 10", "Позняки", "+38 099 677 35 19");
+                    newMap(50.394853, 30.620047);
                     t.classList.add("z-depth-3");
                     break ;
                 case 3:
-                    initContact("вул. Саперно-Слобідська, 10б", "Деміївська", "+38 050 769 86 94");
-                    newMap(50.4046876, 30.5297309);
+                    initContact("пр-т. Академіка Палладіна, 18/30", "Академмістечко", "+38 099 546 71 69");
+                    newMap(50.460269, 30.357376);
+                    t.classList.add("z-depth-3");
+                    break ;
+                case 4:
+                    initContact("пр. Молоді, 8г", "", "+38 093 235 61 78");
+                    newMap(50.763358, 25.374959);
                     t.classList.add("z-depth-3");
                     break ;
             }
@@ -826,8 +842,26 @@
             $(".round-desc").text(desc);
         }
 
+        function initKyev() {
+            $(".loc-desc").each(function () {
+                this.classList.remove("z-depth-3");
+            });
+            $("#init_kyev").addClass("z-depth-3");
+            initContact("вул. Раїси Окіпної, 8", "Лівобережна", "+38 063 290 64 20");
+            newMap(50.449082, 30.590754);
+        }
+
+        function initLutsk() {
+            $(".loc-desc").each(function () {
+                this.classList.remove("z-depth-3");
+            });
+            $("#init_lutsk").addClass("z-depth-3");
+            initContact("пр. Молоді, 8г", "", "+38 093 235 61 78");
+            newMap(50.763358, 25.374959);
+        }
+
         function initMap() {
-            newMap(50.448515, 30.589449);
+            newMap(50.449082, 30.590754);
         }
 
         function newMap(lat, lng) {
@@ -846,7 +880,7 @@
     //                animation: google.Animation.DROP,
                 position: {lat: lat, lng: lng}
             });
-            $('#map').css('height', $(".info").width());
+            //$('#map').css('height', $(".info").width());
             console.log('done');
         }
     </script>

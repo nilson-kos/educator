@@ -805,8 +805,33 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 
 /*CONTACT START*/
 
-.contact_desktop {
+.contact_desktop .tabs {
+    margin-bottom: 30px;
+}
 
+.contact_desktop #loc1, .contact_desktop #loc2  {
+    margin-bottom: 10px;
+}
+
+.contact_desktop .tab a {
+    color: black;
+}
+
+.contact_desktop .tabs .tab a:hover, .contact_desktop .tabs .tab a.active {
+    color: #E87722;
+}
+
+.contact_desktop .tabs .indicator{
+    background-color:#E87722;
+}
+
+.name_city {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact_desktop .tab a h6 {
+    font-size: 24px;
 }
 
 .loc-desc {
